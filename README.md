@@ -11,7 +11,7 @@ for example:
 
 > api_key = "iuty4897bt0879v8w7trv987"
 
-> location = "Chicago,Il,US"
+> location = "Chicago,IL,US"
 
 *note I don't know the syntax for other countries with openweather api, look it up on google or something.
 
