@@ -5,14 +5,16 @@ To use, be sure to set the api key and location to your own for Openweather API
 
 > api_key = "(Your Openweather API Key)"
 
-> location = "City,State,US"
+> lat = ""
+
+> lon = ""
 
 for example:
 
-> api_key = "iuty4897bt0879v8w7trv987"
+> api_key = "ui89wydf9ahyf98sd7ya987ygsd980"
 
-> location = "Chicago,IL,US"
+> lat = "40.111"
 
-*note I don't know the syntax for other countries with openweather api, look it up on google or something.
+> lon = "-88.888"
 
 I'm using a cron job to make this script go every 30 minutes, but you could do whatever you want with the code.
