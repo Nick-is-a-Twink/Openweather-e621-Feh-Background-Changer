@@ -5,9 +5,9 @@ To use, be sure to set the api key and location to your own for Openweather API
 
 > api_key = "(Your Openweather API Key)"
 
-> lat = ""
+> lat = "(latitude)"
 
-> lon = ""
+> lon = "(longitude)"
 
 for example:
 
