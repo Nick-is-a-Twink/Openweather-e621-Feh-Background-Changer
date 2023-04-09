@@ -1,0 +1,18 @@
+To set up a cron job to make this run every (x) amount of minutes: 
+
+To get Cronie working:
+>Download the package Cronie ("Sudo pacman -S cronie" on Arch)
+>Enable the cronie daemon so it runs on boot, for Cronie its cronie.service (sudo systemctl enable cronie.service)
+
+To get the cronjob set up for this:
+>Edit the cronjob for your current user with "crontab -e"
+>In the file write:
+
+  */5 * * * * DISPLAY=:0 python (path to your python file)
+  @reboot DISPLAY=:0 python (path to your python file) 
+ 
+>The */5 means every 5 minutes, change the number to change the time between changing backgrounds
+>Restart the service with "sudo systemctl restart cronie.service" and the script should be working  
+
+Note: If this doesn't work, try running the python file on its own with "python path/to/the/file"
+      If it runs with that, then write the command "who" and see what it says in the () and replace that in DISPLAY=:0 
